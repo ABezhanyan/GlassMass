@@ -527,6 +527,15 @@ body, html {
 @media (max-width: 1000px) {
   .swiper {
     width: 100%;
+    margin-top: 10px;
+  }
+
+  .mom {
+    margin-top: 20px;
+  }
+
+  .header-main {
+    height: 50px;
   }
 }
 
@@ -547,8 +556,38 @@ body, html {
     width: 150px;
   }
 
-  .header-main {
-    height: 50px;
+  .header-text {
+    position:static;
+    display: block;
+    margin-top: 70px;
+    left: auto;
+    right: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0)
+  } */
+  
+  .header-text_two {
+    display: none;
+    
+  }
+
+   .bn54 {
+    position: static;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+}
+
+@media (max-width: 500px) {
+  .header-text {
+    font-size: 25px;
   }
 }
 
