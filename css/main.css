@@ -1,0 +1,337 @@
+body, html {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+	width: 100%;
+	min-width: 640px;
+	max-width: 1920px;
+  font-family: bork,Helvetica,Arial,sans-serif;
+  background-color: #eee;
+}
+
+
+@media (max-width: 980px){
+	.site-title  {
+		font-size:2rem;
+	}
+}
+
+.product-img {
+	width: 265px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card {
+	border-radius: 18px;
+	padding-top: 40px;
+}
+
+
+.catalog__col {
+	display: flex;
+	
+	height: 380px;
+	margin-top: 40px;
+	margin: 40px 10px 10px 10px;
+	background: #FCFCFC;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	border-radius: 18px;
+	
+	transition: all 0.6s ease-in-out;
+}
+
+
+
+.card {
+	padding: 25px 16px 16px 16px;
+	width: 100%;
+	
+}
+
+.catalog__flex {
+	max-width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 65;
+	bottom: 1320px;
+  width: 500px;
+  height: 100vh;
+  z-index: 3;
+}
+
+
+
+
+@media (max-width: 1660px){
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 65;
+		bottom: 1360px;
+		width: 500px;
+		height: 100vh;
+		z-index: 3;
+	}
+	
+}
+
+@media (max-width: 1440px){
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 65;
+		bottom: 1370px;
+		width: 500px;
+		height: 100vh;
+		z-index: 3;
+	}
+	
+}
+
+@media (max-width: 1366px){
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 65;
+		bottom: 1635px;
+		width: 500px;
+		height: 100vh;
+		z-index: 3;
+	}
+	
+}
+
+@media (max-width: 1275px){
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 65;
+		bottom: 1850px;
+		width: 500px;
+		height: 100vh;
+		z-index: 3;
+	}
+	
+}
+
+
+@media (max-width: 960px){
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 65;
+		bottom: 1850px;
+		width: 500px;
+		height: 100vh;
+		z-index: 3;
+	}
+	
+}
+
+@media (max-width: 956px){
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 65;
+		bottom: 2700px;
+		width: 500px;
+		height: 100vh;
+		z-index: 3;
+	}
+	
+}
+
+
+
+
+
+@media (max-width: 980px){
+	.item-title  {
+		font-size: 1.2rem;
+		min-height: auto;
+	}
+}
+
+
+
+
+
+.details-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.items {
+	font-family: 'Merriweather', serif;
+	background-color: whitesmoke;
+	border-radius: 8px;
+	width: 120px;
+	display: flex;
+	font-size: 18px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.items__control {
+	width: 40px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	text-align: center;
+}
+
+.items__control:hover {
+    background: #1d2ae0;
+    color: #FFF;
+}
+
+.items__current {
+	width: 40px;
+}
+
+/* items--small */
+.items.items--small {
+	width: 90px;
+	font-size: 16px;
+	height: 26px;
+	text-align: center;
+}
+
+.items.items--small .items__control {
+	width: 30px;
+}
+
+.items.items--small .items__current {
+	width: 30px;
+}
+
+.price {
+	text-align: left;
+}
+
+
+
+.price__currency {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.btn-outline-warning {
+    color: #1d2ae0;
+    border-color: #1d2ae0;
+}
+
+.btn-outline-warning:hover {
+    color: #FFF;
+    background-color: #1d2ae0;
+    border-color: #1d2ae0;
+}
+
+.cart-item {
+
+}
+
+.cart-item__top {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #dee2e6;
+	margin-bottom: 15px;
+}
+
+#hide {
+	padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+	width: 50px;
+	margin-left: auto;
+}
+
+.img-close {
+	width: 35px;
+}
+
+.cart-item__img img {
+	max-width: 100px;
+	height: auto;
+}
+
+.cart-item__desc {
+	padding-top: 0px;
+	padding-left: 15px;
+	max-width: 208px;
+}
+
+.cart-item__title {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+    line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.cart-item__weight {
+    color: #6c757d!important;
+    font-size: 80%;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.cart-item__details {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.cart-item__details .price__currency {
+	font-size: 18px;
+	margin-left: 15px;
+}
+
+.cart-total {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.delivery-cost {
+
+}
+
+.free {
+	color: #0EA107;
+}
+
+.total-price {
+	color: #EB5A1E;
+}
+
+.rouble {
+	color: #EB5A1E;
+}
+
+.none {
+	display: none;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    </head>
+    <body>
+      <section class="section-header mb-5">
+        <div class="header-main">
+          <header class="header">
+            <span class="phone">8-800-000-000</span>
+            <span><img class="logo" src="./img/Logo.svg" /></span>
+            <a class="button-shop" id="show">
+              <img class="buy" src="./img/buy.png" />
+            </a>
+          </header>
+        </div>
+
+        <!-- Корзина -->
+            
+        <div class="overlay" id="shop" style="display: none;">
+      
+              
+          <!-- Корзина -->
+          <div class="card mb-12">
+            <button id="hide"><img class="img-close" src="./img/close (2).svg" /></button>
+            <div class="card-body">
+              <h5 class="card-title">Ваш заказ</h4>
+  
+                <div data-cart-empty class="alert alert-secondary" role="alert">
+                Корзина пуста
+              </div>
+  
+              <!-- cart-wrapper -->
+              <div class="cart-wrapper">
+  
+              </div>
+              <!-- // cart-wrapper -->
+  
+              <!-- Стоимость заказа -->
+              <div class="cart-total">
+                <p data-cart-delivery class="none">
+                  <span class="h5">Доставка:</span>
+                  <span class="delivery-cost">250 ₽</span><br>
+                  <span class="small">Бесплатно при заказе от 600 ₽</span>
+                </p>
+                <p><span class="h5">Итого:</span>
+                  <span class="total-price">0</span>
+                  <span class="rouble">₽</span></p>
+              </div>
+              <!-- // Стоимость заказа -->
+  
+            </div>
+  
+            <!-- Оформить заказ -->
+            <div id="order-form" class="card-body border-top none">
+              <h5 class="card-title">Оформить заказ</h4>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                </div>
+                <button type="submit" class="btn btn-primary">Заказать</button>
+              </form>
+            </div>
+            <!-- // Оформить заказ -->
+  
+          </div>
+          <!-- // Корзина -->
+  
+        </div>
+      
+        <swiper class="swiper-main">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/1.jpg"></div>
+              <div class="swiper-slide"><img src="./img/2.jpg"></div>
+              <div class="swiper-slide"><img src="./img/3.jpg"></div>
+              <div class="swiper-slide"><img src="./img/4.jpg"></div>
+              <div class="swiper-slide"><img src="./img/5.jpg"></div>
+              <div class="swiper-slide"><img src="./img/6.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </swiper>
+    
+        <a class="header-text">Товары из наших изделий</a>
+        <a class="header-text_two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum dolor beatae accusamus nemo necessitatibus, accusantium doloremque? Tenetur, laudantium maiores id, nesciunt delectus, ex voluptates ea harum iusto illo excepturi!</a>
+        <a href="/">
+          <button class="bn54">
+            <span class="bn54span">Подробнее</span>
+          </button>
+        </a>
+      </section>
+    
+      <section>
+        <div class="">
+          <div class="">
+      
+            <!-- Товары -->
+            <div class="">
+              <div class="catalog__flex" id="products-container">
+      
+              </div>
+            </div>
+      
+            
+            
+      
+            
+      
+          </div>
+        </div>
+    
+        
+      </section>
+    
+      <section>
+        <footer class="footer">
+          <div class="social">
+            <ul class="wrapper">
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span><i class="fa fa-facebook fa-2x"></i></span>
+              </li>
+              <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <span><i class="fa fa-twitter fa-2x"></i></span>
+              </li>
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span><i class="fa fa-instagram fa-2x"></i></span>
+              </li>
+              <li class="icon github">
+                <span class="tooltip">Github</span>
+                <span><i class="fa fa-github fa-2x"></i></span>
+              </li>
+              <li class="icon youtube">
+                <span class="tooltip">VK</span>
+                <span><i class="fa fa-vk fa-2x"></i></span>
+              </li>
+            </ul>
+    
+            <a id="button"></a>
+    
+          </div>
+        </footer>
+      </section>
+      
+    
+        
+      
+      
+        <script src="./js/scroll.js"></script> 
+        <script src="./js/hide-show.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/renderProducts.js"></script>
+        <script src="./js/calcCartPrice.js"></script>
+        <script src="./js/toggleCartStatus.js"></script>
+        <script src="./js/counter-02.js"></script>
+        <script src="./js/cart-02.js"></script>
+    </body>
+</html>
