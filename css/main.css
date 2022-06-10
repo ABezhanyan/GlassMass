@@ -5,8 +5,8 @@ body, html {
   min-width: 320px;
   margin: 0;
 	width: 100%;
-	min-width: 640px;
-	max-width: 1920px;
+	
+	
   font-family: bork,Helvetica,Arial,sans-serif;
   background-color: #eee;
 }

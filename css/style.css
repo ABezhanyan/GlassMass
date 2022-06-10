@@ -33,6 +33,7 @@ body, html {
   left: 0;
   z-index: 999;
   height: 60px;
+ 
   background-color: #131313;
   box-shadow: 4px 4px 8px 0px rgba(63, 63, 63, 0.35);
 }
@@ -373,7 +374,7 @@ body, html {
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 30px;
+  bottom: 100px;
   right: 30px;
   transition: background-color .3s, 
     opacity .5s, visibility .5s;
@@ -525,6 +526,29 @@ body, html {
 
 @media (max-width: 1000px) {
   .swiper {
-    width: 600px;
+    width: 100%;
   }
 }
+
+@media (max-width: 1000px) {
+  .phone {
+    cursor: pointer;
+    color: #fff;
+    padding: 0 0 0 20px ;
+    font-size: 13px;
+  }
+  
+  .buy {
+    padding: 0px 20px 0 0 ;
+    width: 50px;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+
+  .header-main {
+    height: 50px;
+  }
+}
+
